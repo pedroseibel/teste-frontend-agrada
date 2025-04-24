@@ -79,10 +79,8 @@ function updateCartBadge() {
   }
 }
 
-// Ao clicar em comprar
 $(document).on('click', '.btn-buy', function(e) {
   e.preventDefault();
-  // Atualiza contador do carrinho
   var count = Number(localStorage.getItem('cartCount')) || 0;
   count++;
   localStorage.setItem('cartCount', count);
